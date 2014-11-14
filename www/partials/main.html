@@ -1,0 +1,12 @@
+<!-- Title bar -->
+<header class="bar bar-nav">
+	<h1 class="title">CodeForGood</h1>
+</header>
+
+<!-- List of conversations -->
+<ul class="table-view">
+	<li class="table-view-cell media" ng-repeat="user in users">
+		{{user.name}}
+		<p>{{user.country}}</p>
+	</li>
+</ul>
