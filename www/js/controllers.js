@@ -9,3 +9,10 @@ appControllers.controller('mainController', function($scope, $http) {
     {name: "user3", country: "Africa"},
     ];
 });
+
+appControllers.controller('messageController', function($scope, $http) {
+    $scope.messages = [
+    {text: "Hi blabla", timestamp: "00:12"},
+    {text: "Hello blabla", timestamp: "00:12"}
+    ];
+});

@@ -6,7 +6,9 @@
 <!-- List of conversations -->
 <ul class="table-view">
 	<li class="table-view-cell media" ng-repeat="user in users">
-		{{user.name}}
-		<p>{{user.country}}</p>
+		<a href="/message" class="navigate-right">
+			{{user.name}}
+			<p>{{user.country}}</p>
+    	</a>
 	</li>
 </ul>
