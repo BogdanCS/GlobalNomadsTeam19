@@ -7,7 +7,8 @@
 <!-- List of conversations -->
 <div class = "msgArea">
 	<ul class="table-view msgList">
-		<li class="table-view-cell media" ng-repeat="message in messages" >
+		<li class="table-view-cell media" ng-repeat="message in messages"
+			ng-class = "['msgOut','msgIn'][messages[$index].type]">
 			{{message.text}}
 		</li>
 	</ul>
