@@ -15,4 +15,17 @@ appControllers.controller('messageController', function($scope, $http) {
     {text: "Hi blabla", timestamp: "00:12"},
     {text: "Hello blabla", timestamp: "00:12"}
     ];
+
+    $scope.btnSend = function() {
+    	var msg = $("#sendId").val();
+    	if (msg != "") {
+    		$scope.messages.push({text: $("#sendId").val(), timestamp: "00:12"});
+    		$("#sendId").val("");
+    	}
+    }
+
+});
+
+appControllers.controller('btnSendController', function($scope) {
+    alert('clicked!');
 });

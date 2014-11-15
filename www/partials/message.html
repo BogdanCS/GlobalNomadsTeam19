@@ -5,17 +5,19 @@
 </header>
 
 <!-- List of conversations -->
-
-<ul class="table-view">
-	<li class="table-view-cell media" ng-repeat="message in messages">
-		{{message.text}}
-	</li>
-</ul>
-
-<div class="bar bar-standard bar-footer-secondary" style = "position: absolute; height:30%">
-	<textarea type="text" placeholder="Enter message" style = "position: absolute; height:100%"></textarea>
+<div>
+	<ul class="table-view">
+		<li class="table-view-cell media" ng-repeat="message in messages" >
+			{{message.text}}
+		</li>
+	</ul>
 </div>
 
-<footer class="bar bar-standard bar-footer" style="position: absolute; bottom:0">
-	<button class="btn btn-primary btn-block">Send</button>
+<div class="bar bar-standard bar-footer-secondary" style = "position: absolute; height:30%">
+	<textarea id = "sendId" type="text" placeholder="Enter message" style = "position: absolute; height:100%">
+	</textarea>
+</div>
+
+<footer class="bar bar-standard bar-footer" style="position: absolute; bottom:0; height:8%">
+	<button class="btn btn-primary btn-block" ng-click="btnSend()" >Send</button>
 </footer>
