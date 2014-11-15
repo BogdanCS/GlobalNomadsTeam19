@@ -4,7 +4,7 @@
 </header>
 
 <!-- List of conversations -->
-<ul class="table-view">
+<ul class="table-view" style="position: absolute; width: 100%">
 	<li class="table-view-cell media" ng-repeat="user in users">
 		<a href="#/message/" class="navigate-right" ng-click="chooseUser($index)">
 			{{user.name}}

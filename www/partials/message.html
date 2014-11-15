@@ -3,10 +3,10 @@
 	<h1 class="title">CodeForGood</h1>
 	<a  href="#/main" class="icon icon-left-nav pull-left"></a>
 </header>
-
+<body>
 <!-- List of conversations -->
 <div class = "msgArea">
-	<ul class="table-view msgList scrollList" stroll.bind("#scrollList")>
+	<ul class="table-view msgList">
 		<li class="table-view-cell media" ng-repeat="message in messages"
 			ng-class = "['msgOut','msgIn'][messages[$index].type]">
 			{{message.text}}
@@ -17,6 +17,7 @@
 <div class="bar bar-standard bar-footer-secondary sendArea">
 	<textarea id = "sendId" type="text" placeholder="Enter message"></textarea>
 </div>
+</body>
 
 <footer class="bar bar-standard bar-footer footSend">
 	<button class="btn btn-primary btn-block btnSend" ng-click="btnSend()">Send</button>
