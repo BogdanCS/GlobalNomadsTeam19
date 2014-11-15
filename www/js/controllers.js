@@ -22,6 +22,11 @@ appControllers.controller('messageController', function($scope, $http) {
     {text: "Hello blabla", timestamp: "00:12", type: 1},
     {text: "Hi blabla", timestamp: "00:12", type: 0},
     {text: "Yoyo blabla yo", timestamp: "00:12", type: 1},
+    {text: "Yoyo yo", timestamp: "00:12", type: 1},
+    {text: "Hi blabla", timestamp: "00:12", type: 0},
+    {text: "Hello blabla", timestamp: "00:12", type: 1},
+    {text: "Hi blabla", timestamp: "00:12", type: 0},
+    {text: "Yoyo blabla yo", timestamp: "00:12", type: 1},
     {text: "Yoyo yo", timestamp: "00:12", type: 1}
     ];
 

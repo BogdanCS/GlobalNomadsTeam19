@@ -6,7 +6,7 @@
 
 <!-- List of conversations -->
 <div class = "msgArea">
-	<ul class="table-view msgList">
+	<ul class="table-view msgList scrollList" stroll.bind("#scrollList")>
 		<li class="table-view-cell media" ng-repeat="message in messages"
 			ng-class = "['msgOut','msgIn'][messages[$index].type]">
 			{{message.text}}

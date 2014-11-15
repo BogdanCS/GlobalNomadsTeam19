@@ -18,7 +18,7 @@
 .msgArea {
 	position: absolute;
 	bottom: 40%;
-	height: 10%;
+	height: 5%;
 	width: 100%;
 }
 
@@ -36,6 +36,7 @@
 	position: absolute;
 	bottom: 10%;
 	height: 30%;
+	width: 98.5%;
 }
 
 .msgOut {
