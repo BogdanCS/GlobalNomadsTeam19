@@ -20,8 +20,8 @@ appControllers.controller('messageController', function($scope, $http) {
     	var msg = $("#sendId").val();
     	if (msg != "") {
     		$scope.messages.push({text: $("#sendId").val(), timestamp: "00:12"});
-    		$("#sendId").val("");
     	}
+    	$("#sendId").val("");
     }
 
 });

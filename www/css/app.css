@@ -1,0 +1,39 @@
+
+#sendId {
+	position: absolute;
+	height: 100%;
+}
+
+.btnSend {
+	position: absolute;
+	height: 80%;
+}
+
+.footSend {
+	position: absolute;
+	bottom: 0;
+	height: 10%;
+}
+
+.msgArea {
+	position: absolute;
+	bottom: 40%;
+	height: 10%;
+	width: 100%;
+}
+
+.msgList {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.sendTitle {
+	position: absolute;
+}
+
+.sendArea {
+	position: absolute;
+	bottom: 10%;
+	height: 30%;
+}

@@ -1,23 +1,22 @@
 <!-- Title bar -->
-<header class="bar bar-nav">
+<header class="bar bar-nav sendTitle">
 	<h1 class="title">CodeForGood</h1>
 	<a  href="#/main" class="icon icon-left-nav pull-left"></a>
 </header>
 
 <!-- List of conversations -->
-<div>
-	<ul class="table-view">
+<div class = "msgArea">
+	<ul class="table-view msgList">
 		<li class="table-view-cell media" ng-repeat="message in messages" >
 			{{message.text}}
 		</li>
 	</ul>
 </div>
 
-<div class="bar bar-standard bar-footer-secondary" style = "position: absolute; height:30%">
-	<textarea id = "sendId" type="text" placeholder="Enter message" style = "position: absolute; height:100%">
-	</textarea>
+<div class="bar bar-standard bar-footer-secondary sendArea">
+	<textarea id = "sendId" type="text" placeholder="Enter message"></textarea>
 </div>
 
-<footer class="bar bar-standard bar-footer" style="position: absolute; bottom:0; height:8%">
-	<button class="btn btn-primary btn-block" ng-click="btnSend()" >Send</button>
+<footer class="bar bar-standard bar-footer footSend">
+	<button class="btn btn-primary btn-block btnSend" ng-click="btnSend()">Send</button>
 </footer>
